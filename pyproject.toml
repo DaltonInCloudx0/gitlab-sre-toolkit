@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gitlab-sre-toolkit"
+version = "0.1.0"
+description = "Plug-and-play automation toolkit for GitLab CE backup, restore and upgrade"
+authors = [{ name = "DaltonInCloudx0", email = "dev@example.com" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "PyYAML>=5.3",
+    "click>=8.0"
+]
+
+[project.scripts]
+gitlab-sre = "gitlab_sre_toolkit.cli:cli"

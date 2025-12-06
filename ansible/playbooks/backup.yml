@@ -1,0 +1,8 @@
+---
+- name: GitLab backup
+  hosts: gitlab
+  gather_facts: false
+  tasks:
+    - name: Placeholder backup task
+      debug:
+        msg: "This playbook will run 'gitlab-backup create' in a future milestone."

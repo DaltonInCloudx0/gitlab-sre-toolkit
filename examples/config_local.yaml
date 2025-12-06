@@ -1,0 +1,7 @@
+# Example configuration for a local GitLab Omnibus installation.
+
+deployment_type: omnibus_vm
+host: localhost
+ssh_user: gitlab
+backup_dir: ./backups
+target_version: 15.9.0
